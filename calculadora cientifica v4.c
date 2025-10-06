@@ -19,7 +19,7 @@ int main() {
         
         printf("\n");
         printf("=====================================\n");
-        printf("   BEM-VINDO À CALCULADORA BÁSICA\n");
+        printf("   BEM-VINDO À CALCULADORA CIENTÍFICA\n");
         printf("=====================================\n");
         printf("0  - Sair\n");
         printf("1  - Adicao\n");
@@ -486,8 +486,9 @@ int main() {
         printf("\n");
         getchar(); 
         getchar();
-
+	
     } while (escolha != 0);
 
     return 0;
 }
+
