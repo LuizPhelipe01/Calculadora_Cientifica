@@ -23,14 +23,16 @@
 ---
 
 ## ❓ O que é ❓
-> Esta é uma calculadora científica desenvolvida em C que realiza operações básicas e avançadas, como soma, subtração, multiplicação, divisão, potenciação, fatorial, funções trigonométricas e cálculo da constante de Euler.
+> Esta é uma calculadora científica desenvolvida em C, que realiza operações básicas e avançadas, como soma, subtração, multiplicação, divisão, potenciação, fatorial, funções trigonométricas, cálculo da constante de Euler e mais.
+
+> O programa foi estruturado usando structs e arrays para organizar os números e o histórico de operações, além de utilizar funções (void) para exibir o menu e registrar o histórico, tornando o código mais modular e fácil de manter.
 
 ---
 
 ## 👨‍💻 Tecnologias
 
 - Linguagem: C  
-- Bibliotecas: `<math.h>`, `<stdlib.h>`, `<stdio.h>`  
+- Bibliotecas: `<math.h>`, `<stdlib.h>`, `<stdio.h>`, `<string.h>`
 - IDE: GDB Online
 
 ---
@@ -60,5 +62,6 @@ gcc calculadora_cientifica.c -o calculadora -lm
 ## 💡 Observações
 
 - O programa utiliza menu interativo, permitindo que o usuário execute múltiplas operações sem reiniciar.
+- O programa permite que o usuário veja as ultimas operações que ele fez através do histórico.
 - Funciona em qualquer compilador C que suporte a biblioteca <math.h>.
 - Use -lm ao compilar para incluir a biblioteca matemática.
