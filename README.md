@@ -51,9 +51,9 @@ gcc calculadora_cientifica.c -o calculadora -lm
 
 ## 🔎 Exemplos de Uso 
 
-<p align="center"> <img src="imagens/soma.png" alt="Exemplo calculadora soma" width="400"/> </p> 
-<p align="center"> <img src="imagens/potencia_10.png" alt="Exemplo calculadora potência de 10" width="400"/> </p> 
-<p align="center"> <img src="imagens/raiz_quadrada.png" alt="Exemplo calculadora raiz quadrada" width="400"/> </p>
+<p align="center"> <img src="imagens/array_soma.png" alt="Exemplo calculadora soma com array" width="400"/> </p> 
+<p align="center"> <img src="imagens/array_multiplicação.png" alt="Exemplo calculadora multiplicação com array" width="400"/> </p> 
+<p align="center"> <img src="imagens/historico_calculadora.png" alt="Exemplo do histórico das operações na calculadora" width="400"/> </p>
 
 ---
 
