@@ -99,7 +99,15 @@ int main() {
         #endif
 
         exibirMenu();
-        scanf("%d", &tipo.escolha);
+        if (scanf("%d", &tipo.escolha) != 1) {  
+            printf("Entrada invalida! Digite apenas numeros.\n");
+            printf("\nPressione ENTER para voltar ao menu...");
+            getchar();
+            getchar();
+            while (getchar() != '\n');
+            tipo.escolha = -1; 
+            continue;
+        }
 
         switch (tipo.escolha) {
             case 0:
@@ -112,6 +120,9 @@ int main() {
                 
                 if (tipo.quantidade <= 1){
                     printf("\nE preciso de 2 numeros para fazer uma Soma. \n");
+                    printf("\nPressione ENTER para voltar ao menu...");
+                    getchar();
+                    getchar();
                     break;
                 }
                 
@@ -139,6 +150,9 @@ int main() {
                 
                 if (tipo.quantidade <= 1){
                     printf("\nE preciso de 2 numeros para fazer uma Subtracao. \n");
+                    printf("\nPressione ENTER para voltar ao menu...");
+                    getchar();
+                    getchar();
                     break;    
                 } 
                 
@@ -170,6 +184,9 @@ int main() {
                 
                 if (tipo.quantidade <= 1){
                     printf("\nEscolha pelo menos 2 numeros.\n");
+                    printf("\nPressione ENTER para voltar ao menu...");
+                    getchar();
+                    getchar();
                     break;
                 }
                 
@@ -196,6 +213,9 @@ int main() {
                 
                 if (tipo.quantidade <= 1) {
                     printf("\nEscolha pelo menos 2 numeros.\n");
+                    printf("\nPressione ENTER para voltar ao menu...");
+                    getchar();
+                    getchar();
                     break;
                 }
                 
@@ -237,6 +257,9 @@ int main() {
                 
                 if (tipo.base == 0 && tipo.expoente == 0){
                     printf("\nNao e possivel fazer o calculo com esses numeros.\n");
+                    printf("\nPressione ENTER para voltar ao menu...");
+                    getchar();
+                    getchar();
                     break;
                 }
                 
@@ -257,6 +280,9 @@ int main() {
                 
                 if (tipo.raiz < 0) {
                     printf("\nNao e possivel calcular raiz quadrada de numero negativo.\n");
+                    printf("\nPressione ENTER para voltar ao menu...");
+                    getchar();
+                    getchar();
                     break;
                 }
                 
@@ -337,6 +363,9 @@ int main() {
                 
                 if (tipo.numero2 < -1 || tipo.numero2 > 1) {
                     printf("nao e possivel saber o Arcoseno desse numero\n");
+                    printf("\nPressione ENTER para voltar ao menu...");
+                    getchar();
+                    getchar();
                     break;
                 }
                 
@@ -352,11 +381,14 @@ int main() {
                 break;
 
             case 12: 
-                printf("\nDigite o numero: ");
+                printf("\nDigite o numero do Arcocosseno: ");
                 scanf("%lf", &tipo.numero2);
                 
                 if (tipo.numero2 < -1 || tipo.numero2 > 1) {
                     printf("\nNao e possivel saber o Arcocosseno.\n");
+                    printf("\nPressione ENTER para voltar ao menu...");
+                    getchar();
+                    getchar();
                     break;
                 }
                 
@@ -392,6 +424,9 @@ int main() {
                 
                 if (tipo.numero2 <= 0) {
                     printf("\nNao e possivel usar o numero 0.\n");
+                    printf("\nPressione ENTER para voltar ao menu...");
+                    getchar();
+                    getchar();
                     break;
                 }
                 
@@ -412,6 +447,9 @@ int main() {
                 
                 if (tipo.numero2 <= 0) {
                     printf("\nNao e possivel usar o numero 0.\n");
+                    printf("\nPressione ENTER para voltar ao menu...");
+                    getchar();
+                    getchar();
                     break;
                 }
                 
@@ -432,6 +470,9 @@ int main() {
                 
                 if (tipo.termos <= 0){
                     printf("\nQuantidade de termos invalida.\n");
+                    printf("\nPressione ENTER para voltar ao menu...");
+                    getchar();
+                    getchar();
                     break;  
                 } 
                 
@@ -460,6 +501,9 @@ int main() {
                 
                 if (tipo.numero_fatorial < 0){
                     printf("\nnao da pra usar numero negativo para calcular fatorial.\n");
+                    printf("\nPressione ENTER para voltar ao menu...");
+                    getchar();
+                    getchar();
                     break;
                 }
                 
@@ -483,6 +527,9 @@ int main() {
                 
                 if (tipo.quantidade <= 0 || tipo.quantidade > 50) {
                     printf("\nQuantidade invalida. Escolha entre 1 e 50 numeros.\n");
+                    printf("\nPressione ENTER para voltar ao menu...");
+                    getchar();
+                    getchar();
                     break;
                 }
                 
@@ -515,6 +562,9 @@ int main() {
                 
                 if (tipo.casos <= 0 || tipo.favoraveis < 0 || tipo.favoraveis > tipo.casos) {
                     printf("\nValores invalidos para probabilidade.\n");
+                    printf("\nPressione ENTER para voltar ao menu...");
+                    getchar();
+                    getchar();
                     break;
                 }
                 
